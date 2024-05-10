@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     id("kotlin-kapt")
+
 }
 
 android {
@@ -65,5 +66,7 @@ dependencies {
     implementation(libs.retrofit)
     implementation(libs.retrofit2.converter.gson)
     implementation (libs.logging.interceptor)
+    implementation (libs.play.services.maps)
+    implementation (libs.play.services.location)
 
 }
